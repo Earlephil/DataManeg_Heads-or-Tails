@@ -8,17 +8,21 @@ int main(){
     char *t = "Tails";
     int coin;
 
+    pritnf("Who are you?\n");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
+
     printf("Tossing a coin...\n");
     srand((unsigned int)time(NULL));
     for(i = 0; i < 3; i++){
-        printf("Round %d: ", i);
+        printf("Round %d: ", i+1);
         coin = 0 + rand() % 2;
         if(coin == 0){
-             printf("%s", h);
+             printf("%s\n", h);
              countH++;
         }
         else if(coin == 1){
-            printf("%s", t);
+            printf("%s\n", t);
             countT++;
         }
         else{
