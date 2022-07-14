@@ -8,8 +8,6 @@ int main(){
     char *t = "Tails";
     int coin;
 
-
-
     printf("Tossing a coin...\n");
     srand((unsigned int)time(NULL));
     for(i = 0; i < 3; i++){
@@ -30,7 +28,5 @@ int main(){
     }
 
     printf("Heads: %d, Tails: %d\n", countH, countT);
-
-    
     return 0;
 }
